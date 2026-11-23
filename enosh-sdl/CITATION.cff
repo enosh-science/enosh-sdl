@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "ENOSH-SDL: A Transparent Supervisory Decision Layer for Cost-Aware Model Routing in Multimodal AI Agents"
+version: 0.3.0
+date-released: 2026-11-22
+license: MIT
+type: software
+authors:
+  - family-names: Noshokaty
+    given-names: Ibrahim
+    orcid: "https://orcid.org/0000-0002-3544-9129"
+    affiliation: "ENOSH Science Center, New Cairo, Egypt"
+keywords:
+  - multimodal agents
+  - model routing
+  - conditional computation
+  - human-in-the-loop authorization
+  - energy-aware AI
+  - batching
+  - negative result
+  - reproducibility

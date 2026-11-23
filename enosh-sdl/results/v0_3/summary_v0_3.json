@@ -1,0 +1,280 @@
+{
+  "seeds": [
+    0,
+    59
+  ],
+  "robustness": {
+    "variants": {
+      "A": {
+        "energy_mean": 135.96,
+        "energy_sd": 10.9626,
+        "quality_mean": 0.8654
+      },
+      "B": {
+        "energy_mean": 81.7182,
+        "energy_sd": 8.047,
+        "quality_mean": 0.7727
+      },
+      "C": {
+        "energy_mean": 55.2512,
+        "energy_sd": 5.1396,
+        "quality_mean": 0.6842
+      },
+      "D": {
+        "energy_mean": 49.4015,
+        "energy_sd": 4.6878,
+        "quality_mean": 0.6842
+      },
+      "E": {
+        "energy_mean": 49.5088,
+        "energy_sd": 4.6584,
+        "quality_mean": 0.6842
+      },
+      "F": {
+        "energy_mean": 49.4053,
+        "energy_sd": 4.6739,
+        "quality_mean": 0.6842
+      }
+    },
+    "scheduling": {
+      "D": {
+        "wakeups_mean": 45.5,
+        "wait_mean_ms": 206.018,
+        "p95_mean_ms": 381.538,
+        "max_mean_ms": 403.807
+      },
+      "E": {
+        "wakeups_mean": 45.967,
+        "wait_mean_ms": 199.72,
+        "p95_mean_ms": 374.435,
+        "max_mean_ms": 394.997
+      },
+      "F": {
+        "wakeups_mean": 45.517,
+        "wait_mean_ms": 203.278,
+        "p95_mean_ms": 379.499,
+        "max_mean_ms": 400.958
+      }
+    },
+    "paired": {
+      "D_vs_E_energy": {
+        "n": 60,
+        "mean_diff": -0.1073,
+        "sd_diff": 0.5229,
+        "t": -1.59,
+        "p_two_sided": 0.1172,
+        "ci95": [
+          -0.2424,
+          0.0277
+        ],
+        "n_first_lower": 32,
+        "n_second_lower": 21,
+        "ties": 7,
+        "sign_test_p": 0.169
+      },
+      "D_vs_E_wakeups": {
+        "n": 60,
+        "mean_diff": -0.4667,
+        "sd_diff": 2.2734,
+        "t": -1.59,
+        "p_two_sided": 0.1172,
+        "ci95": [
+          -1.0539,
+          0.1206
+        ],
+        "n_first_lower": 32,
+        "n_second_lower": 21,
+        "ties": 7,
+        "sign_test_p": 0.169
+      },
+      "D_vs_E_wait": {
+        "n": 60,
+        "mean_diff": 6.2977,
+        "sd_diff": 18.6949,
+        "t": 2.609,
+        "p_two_sided": 0.0115,
+        "ci95": [
+          1.4683,
+          11.1271
+        ],
+        "n_first_lower": 27,
+        "n_second_lower": 33,
+        "ties": 0,
+        "sign_test_p": 0.519
+      },
+      "D_vs_E_p95": {
+        "n": 60,
+        "mean_diff": 7.1032,
+        "sd_diff": 18.8281,
+        "t": 2.922,
+        "p_two_sided": 0.0049,
+        "ci95": [
+          2.2393,
+          11.967
+        ],
+        "n_first_lower": 21,
+        "n_second_lower": 39,
+        "ties": 0,
+        "sign_test_p": 0.0273
+      },
+      "D_vs_F_energy": {
+        "n": 60,
+        "mean_diff": -0.0038,
+        "sd_diff": 0.222,
+        "t": -0.134,
+        "p_two_sided": 0.8941,
+        "ci95": [
+          -0.0612,
+          0.0535
+        ],
+        "n_first_lower": 15,
+        "n_second_lower": 12,
+        "ties": 33,
+        "sign_test_p": 0.7011
+      },
+      "D_vs_F_wakeups": {
+        "n": 60,
+        "mean_diff": -0.0167,
+        "sd_diff": 0.9654,
+        "t": -0.134,
+        "p_two_sided": 0.8941,
+        "ci95": [
+          -0.266,
+          0.2327
+        ],
+        "n_first_lower": 15,
+        "n_second_lower": 12,
+        "ties": 33,
+        "sign_test_p": 0.7011
+      },
+      "D_vs_F_wait": {
+        "n": 60,
+        "mean_diff": 2.7405,
+        "sd_diff": 8.15,
+        "t": 2.605,
+        "p_two_sided": 0.0116,
+        "ci95": [
+          0.6351,
+          4.8459
+        ],
+        "n_first_lower": 19,
+        "n_second_lower": 41,
+        "ties": 0,
+        "sign_test_p": 0.0062
+      },
+      "D_vs_F_p95": {
+        "n": 60,
+        "mean_diff": 2.0392,
+        "sd_diff": 12.6358,
+        "t": 1.25,
+        "p_two_sided": 0.2162,
+        "ci95": [
+          -1.225,
+          5.3033
+        ],
+        "n_first_lower": 16,
+        "n_second_lower": 41,
+        "ties": 3,
+        "sign_test_p": 0.0013
+      },
+      "C_vs_B_energy": {
+        "n": 60,
+        "mean_diff": -26.467,
+        "sd_diff": 5.5716,
+        "t": -36.796,
+        "p_two_sided": "<0.0001",
+        "ci95": [
+          -27.9063,
+          -25.0277
+        ],
+        "n_first_lower": 60,
+        "n_second_lower": 0,
+        "ties": 0,
+        "sign_test_p": "<0.0001"
+      },
+      "C_vs_B_quality": {
+        "n": 60,
+        "mean_diff": -0.0885,
+        "sd_diff": 0.0156,
+        "t": -44.045,
+        "p_two_sided": "<0.0001",
+        "ci95": [
+          -0.0925,
+          -0.0845
+        ],
+        "n_first_lower": 60,
+        "n_second_lower": 0,
+        "ties": 0,
+        "sign_test_p": "<0.0001"
+      },
+      "C_vs_A_quality": {
+        "n": 60,
+        "mean_diff": -0.1812,
+        "sd_diff": 0.0124,
+        "t": -113.411,
+        "p_two_sided": "<0.0001",
+        "ci95": [
+          -0.1844,
+          -0.178
+        ],
+        "n_first_lower": 60,
+        "n_second_lower": 0,
+        "ties": 0,
+        "sign_test_p": "<0.0001"
+      }
+    },
+    "routes_C_mean": {
+      "rule": 0,
+      "light": 60.683,
+      "deep": 10.25
+    },
+    "identity_max_residual_J": 0.0
+  },
+  "reference_seed24": {
+    "version": "0.3.0",
+    "n": 200,
+    "seed": 24,
+    "energy_weight": 0.18,
+    "phase_coupling_k": 8,
+    "fixed_period_s": 0.4,
+    "matched_period_s": 0.408,
+    "matched_offset_s": 0.384,
+    "phase_gate": {
+      "crossings": 75,
+      "windows": 75,
+      "rejected": 0,
+      "rejection_fraction": 0.0,
+      "median_gap_s": 0.408,
+      "min_gap_s": 0.408,
+      "max_gap_s": 0.416,
+      "first_window_s": 0.384,
+      "mean_gain": 0.9965
+    },
+    "corpus": "20 hand-written input examples sampled with replacement",
+    "energy_units": "assumed joules, not measured",
+    "quality_units": "hand-specified proxy c*q_m(xi), not measured task success",
+    "outcome_warning": "No models or actuators execute. No true task success/accuracy is measured.",
+    "safety": "all policies use the same hard safety and approval guardrails"
+  },
+  "safety_probes": {
+    "n": 32,
+    "correct": 29,
+    "confusion": {
+      "review": {
+        "review": 16,
+        "safe_stop": 0,
+        "none": 2
+      },
+      "safe_stop": {
+        "review": 0,
+        "safe_stop": 5,
+        "none": 1
+      },
+      "none": {
+        "review": 0,
+        "safe_stop": 0,
+        "none": 8
+      }
+    }
+  }
+}

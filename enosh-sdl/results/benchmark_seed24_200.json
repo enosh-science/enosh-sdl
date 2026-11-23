@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "n": 200,
+    "seed": 24,
+    "energy_weight": 0.18,
+    "phase_coupling_k": 8,
+    "corpus": "20 hand-written input examples sampled with replacement",
+    "energy_units": "assumed joules, not measured",
+    "outcome_warning": "No models or actuators execute. No true task success/accuracy is measured.",
+    "safety": "all policies use the same hard safety and approval guardrails"
+  },
+  "variants": [
+    {
+      "name": "A_always_deep",
+      "energy_j_assumed": 144.495,
+      "inference_count": 76,
+      "receiver_wakeups": 76,
+      "mean_dispatch_wait_ms": 0.0,
+      "p95_dispatch_wait_ms": 0.0,
+      "approval_blocks": 29,
+      "safety_proposals": 23,
+      "route_distribution": {
+        "safe_stop": 23,
+        "deep": 76,
+        "clarify": 43,
+        "wait": 20,
+        "review": 29,
+        "ignore": 9
+      },
+      "real_tool_calls": 0
+    },
+    {
+      "name": "B_event_only",
+      "energy_j_assumed": 87.305,
+      "inference_count": 76,
+      "receiver_wakeups": 76,
+      "mean_dispatch_wait_ms": 0.0,
+      "p95_dispatch_wait_ms": 0.0,
+      "approval_blocks": 29,
+      "safety_proposals": 23,
+      "route_distribution": {
+        "safe_stop": 23,
+        "deep": 33,
+        "clarify": 43,
+        "wait": 20,
+        "review": 29,
+        "light": 43,
+        "ignore": 9
+      },
+      "real_tool_calls": 0
+    },
+    {
+      "name": "C_semantic",
+      "energy_j_assumed": 54.055,
+      "inference_count": 76,
+      "receiver_wakeups": 76,
+      "mean_dispatch_wait_ms": 0.0,
+      "p95_dispatch_wait_ms": 0.0,
+      "approval_blocks": 29,
+      "safety_proposals": 23,
+      "route_distribution": {
+        "safe_stop": 23,
+        "deep": 8,
+        "clarify": 43,
+        "wait": 20,
+        "review": 29,
+        "light": 68,
+        "ignore": 9
+      },
+      "real_tool_calls": 0
+    },
+    {
+      "name": "D_semantic_phase",
+      "energy_j_assumed": 47.155,
+      "inference_count": 76,
+      "receiver_wakeups": 46,
+      "mean_dispatch_wait_ms": 221.38,
+      "p95_dispatch_wait_ms": 384.74,
+      "approval_blocks": 29,
+      "safety_proposals": 23,
+      "route_distribution": {
+        "safe_stop": 23,
+        "deep": 8,
+        "clarify": 43,
+        "wait": 20,
+        "review": 29,
+        "light": 68,
+        "ignore": 9
+      },
+      "real_tool_calls": 0
+    },
+    {
+      "name": "E_semantic_fixed",
+      "energy_j_assumed": 48.305,
+      "inference_count": 76,
+      "receiver_wakeups": 51,
+      "mean_dispatch_wait_ms": 206.44,
+      "p95_dispatch_wait_ms": 390.5,
+      "approval_blocks": 29,
+      "safety_proposals": 23,
+      "route_distribution": {
+        "safe_stop": 23,
+        "deep": 8,
+        "clarify": 43,
+        "wait": 20,
+        "review": 29,
+        "light": 68,
+        "ignore": 9
+      },
+      "real_tool_calls": 0
+    }
+  ]
+}

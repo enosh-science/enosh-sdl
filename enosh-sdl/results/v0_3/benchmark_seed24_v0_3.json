@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "version": "0.3.0",
+    "n": 200,
+    "seed": 24,
+    "energy_weight": 0.18,
+    "phase_coupling_k": 8,
+    "fixed_period_s": 0.4,
+    "matched_period_s": 0.408,
+    "matched_offset_s": 0.384,
+    "phase_gate": {
+      "crossings": 75,
+      "windows": 75,
+      "rejected": 0,
+      "rejection_fraction": 0.0,
+      "median_gap_s": 0.408,
+      "min_gap_s": 0.408,
+      "max_gap_s": 0.416,
+      "first_window_s": 0.384,
+      "mean_gain": 0.9965
+    },
+    "corpus": "20 hand-written input examples sampled with replacement",
+    "energy_units": "assumed joules, not measured",
+    "quality_units": "hand-specified proxy c*q_m(xi), not measured task success",
+    "outcome_warning": "No models or actuators execute. No true task success/accuracy is measured.",
+    "safety": "all policies use the same hard safety and approval guardrails"
+  },
+  "variants": [
+    {
+      "name": "A_always_deep",
+      "energy_j_assumed": 144.495,
+      "inference_count": 76,
+      "receiver_wakeups": 76,
+      "mean_dispatch_wait_ms": 0.0,
+      "p95_dispatch_wait_ms": 0.0,
+      "max_dispatch_wait_ms": 0.0,
+      "mean_quality_proxy": 0.8697,
+      "approval_blocks": 29,
+      "safety_proposals": 23,
+      "route_distribution": {
+        "safe_stop": 23,
+        "deep": 76,
+        "clarify": 43,
+        "wait": 20,
+        "review": 29,
+        "ignore": 9
+      },
+      "real_tool_calls": 0
+    },
+    {
+      "name": "B_event_only",
+      "energy_j_assumed": 87.305,
+      "inference_count": 76,
+      "receiver_wakeups": 76,
+      "mean_dispatch_wait_ms": 0.0,
+      "p95_dispatch_wait_ms": 0.0,
+      "max_dispatch_wait_ms": 0.0,
+      "mean_quality_proxy": 0.7908,
+      "approval_blocks": 29,
+      "safety_proposals": 23,
+      "route_distribution": {
+        "safe_stop": 23,
+        "deep": 33,
+        "clarify": 43,
+        "wait": 20,
+        "review": 29,
+        "light": 43,
+        "ignore": 9
+      },
+      "real_tool_calls": 0
+    },
+    {
+      "name": "C_semantic",
+      "energy_j_assumed": 54.055,
+      "inference_count": 76,
+      "receiver_wakeups": 76,
+      "mean_dispatch_wait_ms": 0.0,
+      "p95_dispatch_wait_ms": 0.0,
+      "max_dispatch_wait_ms": 0.0,
+      "mean_quality_proxy": 0.6866,
+      "approval_blocks": 29,
+      "safety_proposals": 23,
+      "route_distribution": {
+        "safe_stop": 23,
+        "deep": 8,
+        "clarify": 43,
+        "wait": 20,
+        "review": 29,
+        "light": 68,
+        "ignore": 9
+      },
+      "real_tool_calls": 0
+    },
+    {
+      "name": "D_semantic_phase",
+      "energy_j_assumed": 47.155,
+      "inference_count": 76,
+      "receiver_wakeups": 46,
+      "mean_dispatch_wait_ms": 221.38,
+      "p95_dispatch_wait_ms": 384.74,
+      "max_dispatch_wait_ms": 403.55,
+      "mean_quality_proxy": 0.6866,
+      "approval_blocks": 29,
+      "safety_proposals": 23,
+      "route_distribution": {
+        "safe_stop": 23,
+        "deep": 8,
+        "clarify": 43,
+        "wait": 20,
+        "review": 29,
+        "light": 68,
+        "ignore": 9
+      },
+      "real_tool_calls": 0
+    },
+    {
+      "name": "E_semantic_fixed",
+      "energy_j_assumed": 48.305,
+      "inference_count": 76,
+      "receiver_wakeups": 51,
+      "mean_dispatch_wait_ms": 206.44,
+      "p95_dispatch_wait_ms": 390.5,
+      "max_dispatch_wait_ms": 396.68,
+      "mean_quality_proxy": 0.6866,
+      "approval_blocks": 29,
+      "safety_proposals": 23,
+      "route_distribution": {
+        "safe_stop": 23,
+        "deep": 8,
+        "clarify": 43,
+        "wait": 20,
+        "review": 29,
+        "light": 68,
+        "ignore": 9
+      },
+      "real_tool_calls": 0
+    },
+    {
+      "name": "F_semantic_fixed_matched",
+      "energy_j_assumed": 47.155,
+      "inference_count": 76,
+      "receiver_wakeups": 46,
+      "mean_dispatch_wait_ms": 212.23,
+      "p95_dispatch_wait_ms": 370.89,
+      "max_dispatch_wait_ms": 404.69,
+      "mean_quality_proxy": 0.6866,
+      "approval_blocks": 29,
+      "safety_proposals": 23,
+      "route_distribution": {
+        "safe_stop": 23,
+        "deep": 8,
+        "clarify": 43,
+        "wait": 20,
+        "review": 29,
+        "light": 68,
+        "ignore": 9
+      },
+      "real_tool_calls": 0
+    }
+  ]
+}

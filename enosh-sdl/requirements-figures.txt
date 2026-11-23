@@ -1,0 +1,4 @@
+# Only needed to redraw figures (results/v0_3/figures/make_figures.py).
+# The engine, tests and experiments use the Python standard library only.
+pandas
+matplotlib

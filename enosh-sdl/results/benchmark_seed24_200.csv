@@ -1,0 +1,6 @@
+name,energy_j_assumed,inference_count,receiver_wakeups,mean_dispatch_wait_ms,p95_dispatch_wait_ms,approval_blocks,safety_proposals
+A_always_deep,144.495,76,76,0.0,0.0,29,23
+B_event_only,87.305,76,76,0.0,0.0,29,23
+C_semantic,54.055,76,76,0.0,0.0,29,23
+D_semantic_phase,47.155,76,46,221.38,384.74,29,23
+E_semantic_fixed,48.305,76,51,206.44,390.5,29,23

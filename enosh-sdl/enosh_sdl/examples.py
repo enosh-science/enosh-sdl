@@ -1,0 +1,23 @@
+"""Hand-written examples: text, transcripts, labels and readings — no raw media decode."""
+EXAMPLES = [
+ {'name':'Quote request','observation':{'domain':'automation','text':'محتاج عرض سعر للعزل الصوتي في غرفة اجتماعات','context':{'customer_id':'demo-001'}}},
+ {'name':'Site inspection request','observation':{'domain':'automation','audio':{'transcript':'عاوز احجز معاينة للموقع', 'confidence':0.91}}},
+ {'name':'Sensitive deletion','observation':{'domain':'automation','text':'احذف كل ملفات العملاء نهائيا'}},
+ {'name':'External email','observation':{'domain':'automation','text':'ابعت ايميل للعميل بعرض السعر','context':{'external_send':True}}},
+ {'name':'Simple greeting','observation':{'domain':'automation','text':'اهلا صباح الخير'}},
+ {'name':'Unknown request','observation':{'domain':'automation','audio':{'transcript':'اه ... ممكن ده', 'confidence':0.31}}},
+ {'name':'Presenter guest speaking','observation':{'domain':'presenter','audio':{'transcript':'معلومة جديدة عن أنظمة التسجيل','confidence':0.93},'context':{'guest_speaking':True,'turn_available':False}}},
+ {'name':'Presenter open turn','observation':{'domain':'presenter','text':'فيه اكتشاف جديد عن هندسة الصوت','context':{'guest_speaking':False,'turn_available':True}}},
+ {'name':'Presenter listening','observation':{'domain':'presenter','text':'حديث عام عن الشغل اليومي','context':{'guest_speaking':True,'turn_available':False}}},
+ {'name':'Robot finds cup','observation':{'domain':'robot','text':'هات الكوباية جنب الكتاب','vision':['cup','blue book'],'vision_confidence':0.90}},
+ {'name':'Robot liquid uncertainty','observation':{'domain':'robot','text':'هات الكوباية لو مفيهاش مياه','vision':['cup','water'],'context':{'liquid_present':True}}},
+ {'name':'Robot no visual target','observation':{'domain':'robot','text':'هات الكوباية'}},
+ {'name':'Robot close obstacle','observation':{'domain':'robot','text':'امشي قدام','sensors':{'obstacle_distance_m':0.17,'battery_pct':40}}},
+ {'name':'Emergency fire sensor','observation':{'domain':'automation','sensors':{'fire_alarm':True}}},
+ {'name':'Lighting request','observation':{'domain':'robot','text':'شغل النور'}},
+ {'name':'Robot low battery','observation':{'domain':'robot','text':'اشرحلي ليه حصل كده بالتفصيل','context':{'battery_pct':3}}},
+ {'name':'Uninteresting noise','observation':{'domain':'automation'}},
+ {'name':'Danger explicit','observation':{'domain':'presenter','text':'في حريق في الاستوديو'}},
+ {'name':'Complex question','observation':{'domain':'automation','text':'اشرح ازاي نطور الدقة وخفض الطاقة في النظام؟'}},
+ {'name':'Payment request','observation':{'domain':'automation','text':'حول فلوس لشركة الموردين'}},
+]
